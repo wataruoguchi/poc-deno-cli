@@ -6,7 +6,7 @@ console.dir(
     string: ["name", "color"],
     alias: { help: "h" },
     default: { color: "blue" },
-  })
+  }),
 );
 
 /**

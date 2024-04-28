@@ -1,6 +1,6 @@
 import type { Args } from "https://deno.land/std@0.200.0/flags/mod.ts";
 import { parse } from "https://deno.land/std@0.200.0/flags/mod.ts";
-import greetings from "./greetings.json" assert { type: "json" };
+import greetings from "./greetings.json" with { type: "json" };
 
 /**
  * Main logic of CLI.
@@ -46,7 +46,7 @@ async function main(inputArgs: string[]): Promise<void> {
 
   if (!save && askToSave) {
     const savePrompt: string | null = prompt(
-      "Do you want to save these settings? Y/n"
+      "Do you want to save these settings? Y/n",
     );
     if (savePrompt?.toUpperCase() === "Y") save = true;
   }
@@ -60,7 +60,7 @@ async function main(inputArgs: string[]): Promise<void> {
     `%c${
       greetings[Math.floor(Math.random() * greetings.length) - 1]
     }, ${name}!`,
-    `color: ${color}; font-weight: bold`
+    `color: ${color}; font-weight: bold`,
   );
 }
 

@@ -1,6 +1,7 @@
 # PoC: CLI app with Deno
 
-Following [Build a Cross-Platform CLI with Deno in 5 minutes](https://deno.com/blog/build-cross-platform-cli).
+Following
+[Build a Cross-Platform CLI with Deno in 5 minutes](https://deno.com/blog/build-cross-platform-cli).
 
 ## IDE config
 
